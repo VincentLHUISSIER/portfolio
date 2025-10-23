@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Vincent LHUISSIER</title>
+    <meta name="description" content="Portfolio professionnel de [Votre Nom] - Étudiant à l'ENSAM">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/ensam.png" alt="Logo ENSAM" class="logo-img">
+                <span class="logo-text">Vincent LHUISSIER</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#annexes">Annexes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Étudiant en 2ème année à l'École Nationale Supérieur des Arts & Métiers (ENSAM) sur le campus de Bordeaux-Talence</p>
+            <div class="hero-buttons">
+                <a href="#presentation" class="btn">Découvrir</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table des matières -->
+    <section id="table-of-contents" class="section">
+        <div class="container">
+            <!-- Le sommaire sera généré automatiquement par JavaScript -->
+        </div>
+    </section>
+
+    <section id="presentation" class="section bg-light">
+        <div class="container">
+            <h2>Présentation</h2>
+            <div class="presentation-content">
+                <div class="presentation-text">
+                    <div class="presentation-header">
+                        <div class="presentation-text-content">
+                            <h3>Qui suis-je ?</h3>
+                            <p>Je m'appelle Vincent LHUISSIER, je suis en deuxième année de bachelor de technologie aux Arts et Métiers au campus de Bordeaux Talence.</p>
+                        </div>
+                        <div class="presentation-image">
+                            <div class="profile-image-container">
+                                <img src="images/photo-profil.jpg" alt="Vincent LHUISSIER - Photo de profil" class="profile-photo" onerror="this.src='https://via.placeholder.com/300x400?text=Photo+de+profil'">
+                            </div>
+                        </div>
+                    </div>
+                    <p>Tout d’abord je suis compétant en CAO. En effet j’ai pu utiliser le logiciel CATIA V5 pour notre projet de première année de bachelor. J’ai donc conçu un robot bipède que j’ai réalisé par la suite pour pouvoir participer à la Toulouse Robot Race. Pour gagner, il faut faire le meilleur temps possible</p>
+                    <p>Je possède également des compétences en réalisation de pièce que j’ai pu acquérir par différents TP. En effet, j’ai pu faire des soudures à l’électrode enrobé et également souder au chalumeau pour lier deux pièces ensembles. J’ai également utilisé un tour et une fraiseuse conventionnels, et des imprimantes 3D, pour créer les pièces demandées, ce qui m’a permis de réaliser plus simplement mes projets</p>
+                    <p>J’ai également des compétences dans le travail en équipe, que j’ai pu affiner avec mes stages et mes projets. Avec ces différents projets, j’ai pu occuper différentes places d’une équipe ce qui me permet d’être plus compréhensif avec mes collègues. En effet, cette compétence est très importante pour pouvoir mener à bien la tache donnée avec plusieurs effectifs.
+                        </p>
+                    <div class="competences">
+                        <h4>Compétences clés :</h4>
+                        <ul class="competences-list">
+                            <li>Compétence 1</li>
+                            <li>Compétence 2</li>
+                            <li>Compétence 3</li>
+                            <li>Compétence 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv" class="section">
+        <div class="container">
+            <h2>Mon CV</h2>
+            <div class="text-center" style="margin: 3rem 0;">
+                <a href="docs/cv.pdf" class="btn btn-primary" download="CV_Vincent_Lhuissier.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download"></i> Télécharger mon CV complet (PDF)
+                </a>
+            </div>
+        </div>
+    <!-- Section Expériences -->
+    <section id="experiences" class="section bg-light">
+        <div class="container">
+            <h2>Valorisation des Expériences</h2>
+            <div class="table-responsive" style="margin: 2rem 0; overflow-x: auto;">
+                <table class="valorisation-table">
+                    <thead>
+                        <tr>
+                            <th>Activités</th>
+                            <th>Savoirs</th>
+                            <th>Savoir-Faire</th>
+                            <th>Savoir-Être</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Projet Bachelor 1ère année (TRR)</td>
+                            <td>Recherche de solutions</td>
+                            <td>CAO-Usinage-Impression 3D</td>
+                            <td>Travail de groupe (coordination, répartition des tâches)</td>
+                        </tr>
+                        <tr>
+                            <td>Stage Bachelor 1ère année (BA204)</td>
+                            <td>Introduction à l'hydraulique</td>
+                            <td>Précision des tâches</td>
+                            <td>Rigueur, Sérieux</td>
+                        </tr>
+                        <tr>
+                            <td>Natation</td>
+                            <td>Nager</td>
+                            <td>Mettre en œuvre des techniques théoriques</td>
+                            <td>Fairplay</td>
+                        </tr>
+                        <tr>
+                            <td>Projet terminale STI2D (Voiture RC)</td>
+                            <td>Dimensionnement des composants</td>
+                            <td>CAO-Imprimante 3D</td>
+                            <td>Travail de groupe (Coordination)</td>
+                        </tr>
+                        <tr>
+                            <td>Stage de 3ème (Pompier de la caserne d'Ornano)</td>
+                            <td>Alerter efficacement</td>
+                            <td>Initiation au secours de victime</td>
+                            <td>Rigueur</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <section id="missions" class="section">
+            <h2>Fiches Missions</h2>
+            <div class="missions-grid">
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Projet Industriel</h3>
+                    </div>
+                    <p>Description détaillée de la mission, des objectifs, des contraintes et des résultats obtenus.</p>
+                    <div class="mission-details">
+                        <p><strong>Durée :</strong> 3 mois</p>
+                        <p><strong>Technologies :</strong> Liste des technologies utilisées</p>
+                    </div>
+                    <a href="#" class="btn-small">Voir les détails</a>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Développement Logiciel</h3>
+                    </div>
+                    <p>Réalisation d'une application ou d'un outil informatique dans le cadre d'un projet académique ou personnel.</p>
+                    <div class="mission-details">
+                        <p><strong>Durée :</strong> 6 mois</p>
+                        <p><strong>Technologies :</strong> Python, JavaScript, SQL</p>
+                    </div>
+                    <a href="#" class="btn-small">Voir les détails</a>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="mission-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Analyse de données</h3>
+                    </div>
+                    <p>Projet d'analyse de données avec traitement statistique et visualisation des résultats.</p>
+                    <div class="mission-details">
+                        <p><strong>Durée :</strong> 2 mois</p>
+                        <p><strong>Outils :</strong> Python, Pandas, Matplotlib</p>
+                    </div>
+                    <a href="#" class="btn-small">Voir les détails</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Annexes -->
+    <section id="annexes" class="section bg-light">
+        <div class="container">
+            <h2>Annexes</h2>
+            <div class="annexes-grid">
+                <div class="annexe-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Rapports</h3>
+                    <p>Documents complémentaires et rapports de projet au format PDF.</p>
+                    <a href="#" class="btn-small">Voir les documents</a>
+                </div>
+                
+                <div class="annexe-card">
+                    <i class="fas fa-images"></i>
+                    <h3>Galerie</h3>
+                    <p>Photos et illustrations de mes projets et réalisations.</p>
+                    <a href="#" class="btn-small">Voir la galerie</a>
+                </div>
+                
+                <div class="annexe-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Vidéos</h3>
+                    <p>Présentations vidéo et démonstrations de projets.</p>
+                    <a href="#" class="btn-small">Voir les vidéos</a>
+                </div>
+                
+                <div class="annexe-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Bibliographie</h3>
+                    <p>Ressources et références qui m'ont inspiré.</p>
+                    <a href="#" class="btn-small">Consulter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Restons en contact</h3>
+                    <p>N'hésitez pas à me contacter pour toute opportunité ou pour échanger sur des projets passionnants.</p>
+                    
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> vincent.lhuissier@ensam.eu</p>
+                        <p><i class="fas fa-phone"></i> +33 7 68 20 07 05</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mérignac, France</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bouton de retour en haut -->
+    <a href="#" id="back-to-top" title="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Gestion du formulaire de contact
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Ici, vous pouvez ajouter le code pour envoyer le formulaire
+            alert('Merci pour votre message ! Je vous répondrai dès que possible.');
+            this.reset();
+        });
+        
+        // Bouton de retour en haut
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
