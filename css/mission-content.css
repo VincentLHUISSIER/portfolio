@@ -1,0 +1,300 @@
+/* Styles pour le contenu des fiches missions */
+.mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.mission-content h1 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.mission-content h2 {
+    color: #2c3e50;
+    font-size: 1.6em;
+    margin: 30px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.mission-info {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-info p {
+    margin-bottom: 15px;
+}
+
+.mission-info ul {
+    margin: 15px 0 15px 20px;
+}
+
+.mission-info li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.mission-info li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.competences li {
+    background-color: #e8f4fc;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    color: #2c3e50;
+    border: 1px solid #d0e3f7;
+}
+
+.mission-footer {
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.btn-download:hover {
+    background-color: #2980b9;
+}
+
+.btn-download i {
+    margin-right: 8px;
+}
+
+/* Styles pour les tableaux dans les missions */
+.mission-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+}
+
+.mission-content th, 
+.mission-content td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.mission-content th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.mission-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mission-content img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    padding: 10px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+.gallery-caption {
+    padding: 12px;
+    background: #f8f9fa;
+    font-size: 0.9em;
+    color: #495057;
+    text-align: center;
+}
+
+.mission-image {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.mission-image img {
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
+}
+
+.mission-image .caption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Styles pour les visionneuses PDF */
+.pdf-container {
+    margin: 25px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh; /* Hauteur minimale pour la zone de contenu */
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 90vh; /* Utilisation de 90% de la hauteur de l'écran */
+    min-height: 700px; /* Hauteur minimale pour les petits écrans */
+    border: none;
+    background: white;
+    display: block;
+}
+
+.pdf-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    flex-shrink: 0; /* Empêche le rétrécissement des contrôles */
+}
+
+.mission-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.mission-tab {
+    padding: 10px 20px;
+    background: #f1f3f5;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #495057;
+    transition: all 0.3s ease;
+    font-size: 0.95em;
+}
+
+.mission-tab.active {
+    background: #4a6fa5;
+    color: white;
+}
+
+.mission-tab:not(.active):hover {
+    background: #e9ecef;
+}
+
+/* Style pour les titres */
+.mission-embed h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+/* Responsive design */
+/* Ajustements pour les petits écrans */
+@media (max-width: 768px) {
+    .pdf-viewer {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .pdf-container {
+        margin: 15px 0;
+        min-height: 70vh;
+    }
+    
+    .mission-content {
+        padding: 0 10px;
+    }
+    .mission-content {
+        padding: 15px;
+    }
+    
+    .mission-info {
+        padding: 15px;
+    }
+    
+    .mission-content h1 {
+        font-size: 1.8em;
+    }
+    
+    .mission-content h2 {
+        font-size: 1.4em;
+    }
+    
+    .competences {
+        flex-direction: column;
+    }
+    
+    .competences li {
+        width: fit-content;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

@@ -11,6 +11,8 @@
     
     <!-- Feuilles de style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mission-styles.css">
+    <link rel="stylesheet" href="css/mission-content.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -49,13 +51,6 @@
         </div>
     </section>
 
-    <!-- Table des matières -->
-    <section id="table-of-contents" class="section">
-        <div class="container">
-            <!-- Le sommaire sera généré automatiquement par JavaScript -->
-        </div>
-    </section>
-
     <section id="presentation" class="section bg-light">
         <div class="container">
             <h2>Présentation</h2>
@@ -76,14 +71,7 @@
                     <p>Je possède également des compétences en réalisation de pièce que j’ai pu acquérir par différents TP. En effet, j’ai pu faire des soudures à l’électrode enrobé et également souder au chalumeau pour lier deux pièces ensembles. J’ai également utilisé un tour et une fraiseuse conventionnels, et des imprimantes 3D, pour créer les pièces demandées, ce qui m’a permis de réaliser plus simplement mes projets</p>
                     <p>J’ai également des compétences dans le travail en équipe, que j’ai pu affiner avec mes stages et mes projets. Avec ces différents projets, j’ai pu occuper différentes places d’une équipe ce qui me permet d’être plus compréhensif avec mes collègues. En effet, cette compétence est très importante pour pouvoir mener à bien la tache donnée avec plusieurs effectifs.
                         </p>
-                    <div class="competences">
-                        <h4>Compétences clés :</h4>
-                        <ul class="competences-list">
-                            <li>Compétence 1</li>
-                            <li>Compétence 2</li>
-                            <li>Compétence 3</li>
-                            <li>Compétence 4</li>
-                        </ul>
+                    
                     </div>
                 </div>
             </div>
@@ -100,6 +88,8 @@
                 </a>
             </div>
         </div>
+    </section>
+
     <!-- Section Expériences -->
     <section id="experiences" class="section bg-light">
         <div class="container">
@@ -118,32 +108,38 @@
                         <tr>
                             <td>Projet Bachelor 1ère année (TRR)</td>
                             <td>Recherche de solutions</td>
-                            <td>CAO-Usinage-Impression 3D</td>
-                            <td>Travail de groupe (coordination, répartition des tâches)</td>
+                            <td>CAO-usinage-impression 3D</td>
+                            <td>Travail en équipe (coordination, répartition des tâches)</td>
                         </tr>
                         <tr>
                             <td>Stage Bachelor 1ère année (BA204)</td>
-                            <td>Introduction à l'hydraulique</td>
-                            <td>Précision des tâches</td>
-                            <td>Rigueur, Sérieux</td>
-                        </tr>
-                        <tr>
-                            <td>Natation</td>
-                            <td>Nager</td>
-                            <td>Mettre en œuvre des techniques théoriques</td>
-                            <td>Fairplay</td>
+                            <td>Initiation à l'hydraulique, cryogénie, électricité, peinture</td>
+                            <td>Utilisation de servantes complètes, valise de tests pour les emports, pistolet à peinture, compresseurs, fer à souder, perceuse à colonne</td>
+                            <td>Rigueur, sérieux, attentionné, travail en équipe, autonomie</td>
                         </tr>
                         <tr>
                             <td>Projet terminale STI2D (Voiture RC)</td>
                             <td>Dimensionnement des composants</td>
-                            <td>CAO-Imprimante 3D</td>
-                            <td>Travail de groupe (Coordination)</td>
+                            <td>CAO-imprimante 3D</td>
+                            <td>Travail en équipe (Coordination)</td>
+                        </tr>
+                        <tr>
+                            <td>Brevet de pilote privé (PPLA)</td>
+                            <td>Piloter un avion, Réglementation aéronautique</td>
+                            <td>Centrage des masses, prévisions météo, estimation du temps de trajet et de la consommation de carburant, vérification de l'appareil</td>
+                            <td>Rigueur, patience, concentration, à l'écoute</td>
                         </tr>
                         <tr>
                             <td>Stage de 3ème (Pompier de la caserne d'Ornano)</td>
                             <td>Alerter efficacement</td>
-                            <td>Initiation au secours de victime</td>
-                            <td>Rigueur</td>
+                            <td>Initiation au secourisme</td>
+                            <td>Rigueur, être à l'écoute, travail en équipe, entretien physique</td>
+                        </tr>
+                        <tr>
+                            <td>Natation</td>
+                            <td>Nager</td>
+                            <td>Mise en œuvre des techniques, appliquer les consignes de l'entraîneur</td>
+                            <td>Fairplay, être à l'écoute de l'entraîneur</td>
                         </tr>
                     </tbody>
                 </table>
@@ -152,45 +148,71 @@
     </section>
     
     <section id="missions" class="section">
+        <div class="container">
             <h2>Fiches Missions</h2>
-            <div class="missions-grid">
-                <div class="mission-card">
-                    <div class="mission-header">
-                        <i class="fas fa-project-diagram"></i>
-                        <h3>Projet Industriel</h3>
-                    </div>
-                    <p>Description détaillée de la mission, des objectifs, des contraintes et des résultats obtenus.</p>
-                    <div class="mission-details">
-                        <p><strong>Durée :</strong> 3 mois</p>
-                        <p><strong>Technologies :</strong> Liste des technologies utilisées</p>
-                    </div>
-                    <a href="#" class="btn-small">Voir les détails</a>
+            
+            <div class="missions-container">
+                <div class="mission-tabs">
+                    <button class="mission-tab active" data-tab="mission1">Fiche Mission 1 Stage à la BA204</button>
+                    <button class="mission-tab" data-tab="mission2">Fiche Mission 2 Projet robot</button>
+                    <button class="mission-tab" data-tab="mission3">Fiche Mission 3 Voiture radiocommandé</button>
                 </div>
                 
-                <div class="mission-card">
-                    <div class="mission-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Développement Logiciel</h3>
+                <div class="mission-content active" id="mission1">
+                    <div class="mission-body">
+                            <div class="mission-embed">
+                                <h2>Fiche Mission 1 Stage à la BA204</h2>
+                                <div class="pdf-container">
+                                    <iframe src="docs/missions/Fiche mission 1.pdf#view=fitH" class="pdf-viewer" frameborder="0"></iframe>
+                                    <div class="pdf-controls">
+                                        <a href="docs/missions/Fiche mission 1.pdf" class="btn-download" download="Fiche_Mission_1_Vincent_Lhuissier.pdf">
+                                            <i class="fas fa-download"></i> Télécharger le PDF
+                                        </a>
+                                        <a href="docs/missions/Fiche mission 1.pdf" target="_blank" class="btn-download">
+                                            <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <p>Réalisation d'une application ou d'un outil informatique dans le cadre d'un projet académique ou personnel.</p>
-                    <div class="mission-details">
-                        <p><strong>Durée :</strong> 6 mois</p>
-                        <p><strong>Technologies :</strong> Python, JavaScript, SQL</p>
-                    </div>
-                    <a href="#" class="btn-small">Voir les détails</a>
                 </div>
                 
-                <div class="mission-card">
-                    <div class="mission-header">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Analyse de données</h3>
+                <div class="mission-content" id="mission2">
+                    <div class="mission-body">
+                            <div class="mission-embed">
+                                <h2>Fiche Mission 2 Projet robot</h2>
+                                <div class="pdf-container">
+                                    <iframe src="docs/missions/Fiche mission 2.pdf#view=fitH" class="pdf-viewer" frameborder="0"></iframe>
+                                    <div class="pdf-controls">
+                                        <a href="docs/missions/Fiche mission 2.pdf" class="btn-download" download="Fiche_Mission_2_Vincent_Lhuissier.pdf">
+                                            <i class="fas fa-download"></i> Télécharger le PDF
+                                        </a>
+                                        <a href="docs/missions/Fiche mission 2.pdf" target="_blank" class="btn-download">
+                                            <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-                    <p>Projet d'analyse de données avec traitement statistique et visualisation des résultats.</p>
-                    <div class="mission-details">
-                        <p><strong>Durée :</strong> 2 mois</p>
-                        <p><strong>Outils :</strong> Python, Pandas, Matplotlib</p>
+                </div>
+                
+                <div class="mission-content" id="mission3">
+                    <div class="mission-body">
+                        <div class="mission-embed">
+                            <h2>Fiche Mission 3 Voiture radiocommandé</h2>
+                            <div class="pdf-container">
+                                <iframe src="docs/missions/Fiche mission 3.pdf#view=fitH" class="pdf-viewer" frameborder="0"></iframe>
+                                <div class="pdf-controls">
+                                    <a href="docs/missions/Fiche mission 3.pdf" class="btn-download" download="Fiche_Mission_3_Vincent_Lhuissier.pdf">
+                                        <i class="fas fa-download"></i> Télécharger le PDF
+                                    </a>
+                                    <a href="docs/missions/Fiche mission 3.pdf" target="_blank" class="btn-download">
+                                        <i class="fas fa-external-link-alt"></i> Ouvrir dans un nouvel onglet
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="btn-small">Voir les détails</a>
                 </div>
             </div>
         </div>
@@ -238,7 +260,6 @@
             <h2>Contact</h2>
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Restons en contact</h3>
                     <p>N'hésitez pas à me contacter pour toute opportunité ou pour échanger sur des projets passionnants.</p>
                     
                     <div class="contact-details">
@@ -247,28 +268,9 @@
                         <p><i class="fas fa-map-marker-alt"></i> Mérignac, France</p>
                     </div>
                     
-                    <div class="social-links">
-                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    
                 </div>
                 
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Votre email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Envoyer le message</button>
-                </form>
             </div>
         </div>
     </section>
@@ -280,34 +282,8 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
+    <script src="js/mission-tabs.js"></script>
     
-    <script>
-        // Gestion du formulaire de contact
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Ici, vous pouvez ajouter le code pour envoyer le formulaire
-            alert('Merci pour votre message ! Je vous répondrai dès que possible.');
-            this.reset();
-        });
-        
-        // Bouton de retour en haut
-        const backToTopButton = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-        
-        backToTopButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+
 </body>
 </html>
