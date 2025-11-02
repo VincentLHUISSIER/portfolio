@@ -1,0 +1,160 @@
+/* Styles pour la section Annexes */
+.annexes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: stretch;
+}
+
+.annexe-category {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.annexe-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.annexe-category > h3 {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.annexe-category > h3 i {
+    font-size: 1.2rem;
+}
+
+.annexe-card {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.annexe-card h4 {
+    color: #2c3e50;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.1rem;
+}
+
+.annexe-card p {
+    color: #6c757d;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+.annexe-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Styles des boutons */
+.btn-small {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-view {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-view:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
+.btn-outline:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.annexe-actions .btn-small,
+.annexe-actions button {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid #3498db;
+    background-color: #3498db;
+    color: white;
+}
+
+.annexe-actions .btn-small:hover,
+.annexe-actions button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.annexe-actions .btn-small i,
+.annexe-actions button i {
+    font-size: 0.9em;
+}
+
+/* Style pour le bouton secondaire (Télécharger) */
+.annexe-actions .btn-outline {
+    background-color: transparent;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+.annexe-actions .btn-outline:hover {
+    background-color: #f8f9fa;
+    color: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .annexes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .annexe-actions {
+        flex-direction: column;
+    }
+    
+    .annexe-actions .btn-small {
+        width: 100%;
+    }
+}

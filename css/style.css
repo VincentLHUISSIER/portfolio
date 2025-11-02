@@ -203,9 +203,13 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(52, 152, 219, 0.7)), url('../images/cockpit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
     margin-top: 60px;
+    position: relative;
 }
 
 .hero h1 {
@@ -1023,5 +1027,115 @@ footer {
     #table-of-contents h2 {
         font-size: 2rem;
         margin-bottom: 40px;
+    }
+}
+
+/* Styles pour la section Projet Professionnel */
+#projet-pro {
+    padding: 4rem 0;
+}
+
+.projet-pro-content {
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+
+.projet-pro-text h3 {
+    color: #2c3e50;
+    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.projet-pro-text h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.projet-pro-text p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.projet-pro-list {
+    margin: 1rem 0 2rem 1.5rem;
+    list-style: none;
+}
+
+.projet-pro-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.projet-pro-list li::before {
+    content: '▸';
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.competence-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 4px solid #3498db;
+}
+
+.competence-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.competence-card i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.competence-card h4 {
+    color: #2c3e50;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.competence-card p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design pour Projet Professionnel */
+@media (max-width: 768px) {
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projet-pro-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    #projet-pro {
+        padding: 3rem 0;
     }
 }

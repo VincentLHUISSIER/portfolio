@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mission-styles.css">
     <link rel="stylesheet" href="css/mission-content.css">
+    <link rel="stylesheet" href="css/annexes.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -31,6 +32,7 @@
                 <li><a href="#experiences">Expériences</a></li>
                 <li><a href="#missions">Missions</a></li>
                 <li><a href="#annexes">Annexes</a></li>
+                <li><a href="#projet-pro">Projet Pro</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -43,11 +45,7 @@
     <section id="accueil" class="hero">
         <div class="container">
             <h1>Bienvenue sur mon Portfolio</h1>
-            <p>Étudiant en 2ème année à l'École Nationale Supérieur des Arts & Métiers (ENSAM) sur le campus de Bordeaux-Talence</p>
-            <div class="hero-buttons">
-                <a href="#presentation" class="btn">Découvrir</a>
-                <a href="#contact" class="btn btn-outline">Me contacter</a>
-            </div>
+            <p>Étudiant en 2ème année à l'École Nationale Supérieure d'Arts & Métiers (ENSAM) sur le campus de Bordeaux-Talence</p>
         </div>
     </section>
 
@@ -58,8 +56,8 @@
                 <div class="presentation-text">
                     <div class="presentation-header">
                         <div class="presentation-text-content">
-                            <h3>Qui suis-je ?</h3>
-                            <p>Je m'appelle Vincent LHUISSIER, je suis en deuxième année de bachelor de technologie aux Arts et Métiers au campus de Bordeaux Talence.</p>
+                            <h3>A propos de moi</h3>
+                            <p>Je m’appelle Vincent LHUISSIER et je suis en 2ème année de bachelor de technologie à l’Ecole Nationale Supérieure d’Arts et Métiers au campus de Bordeaux-Talence. </p>
                         </div>
                         <div class="presentation-image">
                             <div class="profile-image-container">
@@ -67,9 +65,10 @@
                             </div>
                         </div>
                     </div>
-                    <p>Tout d’abord je suis compétant en CAO. En effet j’ai pu utiliser le logiciel CATIA V5 pour notre projet de première année de bachelor. J’ai donc conçu un robot bipède que j’ai réalisé par la suite pour pouvoir participer à la Toulouse Robot Race. Pour gagner, il faut faire le meilleur temps possible</p>
-                    <p>Je possède également des compétences en réalisation de pièce que j’ai pu acquérir par différents TP. En effet, j’ai pu faire des soudures à l’électrode enrobé et également souder au chalumeau pour lier deux pièces ensembles. J’ai également utilisé un tour et une fraiseuse conventionnels, et des imprimantes 3D, pour créer les pièces demandées, ce qui m’a permis de réaliser plus simplement mes projets</p>
-                    <p>J’ai également des compétences dans le travail en équipe, que j’ai pu affiner avec mes stages et mes projets. Avec ces différents projets, j’ai pu occuper différentes places d’une équipe ce qui me permet d’être plus compréhensif avec mes collègues. En effet, cette compétence est très importante pour pouvoir mener à bien la tache donnée avec plusieurs effectifs.
+                    <p>Passionné par l’aéronautique, j’ai obtenu mon Brevet d’initiation à l’aéronautique avec mention bien. Dans ce cadre, j’ai développé une rigueur et une attention particulière aux détails, essentielles dans le domaine de la maintenance aéronautique. En effet, je prépare actuellement le brevet de pilote privé (PPLA) à l’aérodrome d’Yvrac et à ce titre, je vérifie mon avion avant chaque vol.</p>
+                    <p>Au cours de ma formation, j’ai approfondi mes connaissances en mécanique et résistance des matériaux, et acquis des compétences en modélisation CAO, lecture de plans, et conception de pièces, en travaillant sur la modélisation de pièces complexes pour une voiture radiocommandée et un robot bipède.</p>
+                    <p>D’autre part, je possède des compétences en fabrication de pièces complexes acquises lors de différents travaux pratiques. En effet, j’ai réalisé des soudures à l’électrode enrobée et également soudé au chalumeau afin de lier deux pièces ensemble. J’ai également utilisé un tour et une fraiseuse conventionnels, et des imprimantes 3D, pour créer les pièces nécessaires.</p>
+                    <p>Enfin, je réalise des tâches en autonomie et travaille en équipe. Lors de mon stage à la Base Aérienne 204, j’ai intégré les ateliers emport et canon, cryogénie, hydraulique et électricité, et enfin peinture. J’ai travaillé avec du personnel dévoué dans leur métier et patient dans la transmission de leurs connaissances. 
                         </p>
                     
                     </div>
@@ -82,10 +81,64 @@
     <section id="cv" class="section">
         <div class="container">
             <h2>Mon CV</h2>
-            <div class="text-center" style="margin: 3rem 0;">
-                <a href="docs/cv.pdf" class="btn btn-primary" download="CV_Vincent_Lhuissier.pdf" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-download"></i> Télécharger mon CV complet (PDF)
-                </a>
+            <div class="text-center" style="margin: 1rem 0 3rem 0;">
+                <div style="margin-bottom: 1rem;">
+                    <a href="docs/cv.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-eye"></i> Voir mon CV
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-primary" id="downloadCvBtn">
+                        <i class="fas fa-download"></i> Télécharger mon CV (PDF)
+                    </a>
+                    <script>
+                    document.getElementById('downloadCvBtn').addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        // Créer un XMLHttpRequest pour télécharger le fichier
+                        const xhr = new XMLHttpRequest();
+                        xhr.open('GET', 'docs/cv.pdf', true);
+                        xhr.responseType = 'blob';
+                        
+                        xhr.onload = function() {
+                            if (xhr.status === 200) {
+                                // Créer un blob à partir de la réponse
+                                const blob = xhr.response;
+                                
+                                // Créer une URL pour le blob
+                                const url = window.URL.createObjectURL(blob);
+                                
+                                // Créer un lien temporaire
+                                const link = document.createElement('a');
+                                link.href = url;
+                                link.download = 'CV_Vincent_Lhuissier.pdf';
+                                link.style.display = 'none';
+                                
+                                // Ajouter au DOM, cliquer et nettoyer
+                                document.body.appendChild(link);
+                                link.click();
+                                
+                                setTimeout(() => {
+                                    document.body.removeChild(link);
+                                    window.URL.revokeObjectURL(url);
+                                }, 100);
+                            } else {
+                                console.error('Erreur de chargement:', xhr.status);
+                                alert('Impossible de télécharger le fichier. Le fichier va s\'ouvrir dans un nouvel onglet.');
+                                window.open('docs/cv.pdf', '_blank');
+                            }
+                        };
+                        
+                        xhr.onerror = function() {
+                            console.error('Erreur réseau');
+                            alert('Erreur réseau. Le fichier va s\'ouvrir dans un nouvel onglet.');
+                            window.open('docs/cv.pdf', '_blank');
+                        };
+                        
+                        xhr.send();
+                    });
+                    </script>
+                </div>
             </div>
         </div>
     </section>
@@ -106,40 +159,34 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Projet Bachelor 1ère année (TRR)</td>
-                            <td>Recherche de solutions</td>
-                            <td>CAO-usinage-impression 3D</td>
-                            <td>Travail en équipe (coordination, répartition des tâches)</td>
+                            <td>Conception sur CATIA V5</td>
+                            <td>Maîtrise du logiciel de CAO</td>
+                            <td>Création de pièces, plans, recherche de solutions</td>
+                            <td>Patience, rigueur</td>
                         </tr>
                         <tr>
-                            <td>Stage Bachelor 1ère année (BA204)</td>
+                            <td>Réalisation des pièces</td>
+                            <td>Suivre un plan puis fabriquer différentes pièces</td>
+                            <td>Maîtrise de l'imprimante 3D, usinage (tour, fraiseuse, soudure, plieuse)</td>
+                            <td>Concentration, sérieux, autonomie</td>
+                        </tr>
+                        <tr>
+                            <td>Maintenance</td>
                             <td>Initiation à l'hydraulique, cryogénie, électricité, peinture</td>
                             <td>Utilisation de servantes complètes, valise de tests pour les emports, pistolet à peinture, compresseurs, fer à souder, perceuse à colonne</td>
-                            <td>Rigueur, sérieux, attentionné, travail en équipe, autonomie</td>
+                            <td>Travail en équipe, autonomie</td>
                         </tr>
                         <tr>
-                            <td>Projet terminale STI2D (Voiture RC)</td>
-                            <td>Dimensionnement des composants</td>
-                            <td>CAO-imprimante 3D</td>
-                            <td>Travail en équipe (Coordination)</td>
+                            <td>Gestion de projet</td>
+                            <td>Coordination des membres d'une équipe</td>
+                            <td>Organisation des tâches</td>
+                            <td>Communication, travail en équipe</td>
                         </tr>
                         <tr>
                             <td>Brevet de pilote privé (PPLA)</td>
                             <td>Piloter un avion, Réglementation aéronautique</td>
                             <td>Centrage des masses, prévisions météo, estimation du temps de trajet et de la consommation de carburant, vérification de l'appareil</td>
-                            <td>Rigueur, patience, concentration, à l'écoute</td>
-                        </tr>
-                        <tr>
-                            <td>Stage de 3ème (Pompier de la caserne d'Ornano)</td>
-                            <td>Alerter efficacement</td>
-                            <td>Initiation au secourisme</td>
-                            <td>Rigueur, être à l'écoute, travail en équipe, entretien physique</td>
-                        </tr>
-                        <tr>
-                            <td>Natation</td>
-                            <td>Nager</td>
-                            <td>Mise en œuvre des techniques, appliquer les consignes de l'entraîneur</td>
-                            <td>Fairplay, être à l'écoute de l'entraîneur</td>
+                            <td>Rigueur, patience, concentration, être à l'écoute</td>
                         </tr>
                     </tbody>
                 </table>
@@ -153,15 +200,15 @@
             
             <div class="missions-container">
                 <div class="mission-tabs">
-                    <button class="mission-tab active" data-tab="mission1">Fiche Mission 1 Stage à la BA204</button>
-                    <button class="mission-tab" data-tab="mission2">Fiche Mission 2 Projet robot</button>
-                    <button class="mission-tab" data-tab="mission3">Fiche Mission 3 Voiture radiocommandé</button>
+                    <button class="mission-tab active" data-tab="mission1">Fiche Mission Stage à la BA 204</button>
+                    <button class="mission-tab" data-tab="mission2">Fiche Mission Projet robot</button>
+                    <button class="mission-tab" data-tab="mission3">Fiche Mission Voiture radiocommandée</button>
                 </div>
                 
                 <div class="mission-content active" id="mission1">
                     <div class="mission-body">
                             <div class="mission-embed">
-                                <h2>Fiche Mission 1 Stage à la BA204</h2>
+                                <h2>Fiche Mission Stage à la BA 204</h2>
                                 <div class="pdf-container">
                                     <iframe src="docs/missions/Fiche mission 1.pdf#view=fitH" class="pdf-viewer" frameborder="0"></iframe>
                                     <div class="pdf-controls">
@@ -180,7 +227,7 @@
                 <div class="mission-content" id="mission2">
                     <div class="mission-body">
                             <div class="mission-embed">
-                                <h2>Fiche Mission 2 Projet robot</h2>
+                                <h2>Fiche Mission Projet robot</h2>
                                 <div class="pdf-container">
                                     <iframe src="docs/missions/Fiche mission 2.pdf#view=fitH" class="pdf-viewer" frameborder="0"></iframe>
                                     <div class="pdf-controls">
@@ -199,7 +246,7 @@
                 <div class="mission-content" id="mission3">
                     <div class="mission-body">
                         <div class="mission-embed">
-                            <h2>Fiche Mission 3 Voiture radiocommandé</h2>
+                            <h2>Fiche Mission Voiture radiocommandée</h2>
                             <div class="pdf-container">
                                 <iframe src="docs/missions/Fiche mission 3.pdf#view=fitH" class="pdf-viewer" frameborder="0"></iframe>
                                 <div class="pdf-controls">
@@ -223,32 +270,85 @@
         <div class="container">
             <h2>Annexes</h2>
             <div class="annexes-grid">
-                <div class="annexe-card">
-                    <i class="fas fa-file-pdf"></i>
-                    <h3>Rapports</h3>
-                    <p>Documents complémentaires et rapports de projet au format PDF.</p>
-                    <a href="#" class="btn-small">Voir les documents</a>
+                <!-- Formation -->
+                <div class="annexe-category">
+                    <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                    <div class="annexe-card">
+                        <h4>Plaquette de formation</h4>
+                        <p>Découvrez le programme complet du Bachelor de Technologie Mécanique.</p>
+                        <div class="annexe-actions">
+                            <a href="./docs/Bachelor_de_technologie_mécanique_production_2025_02_24.pdf" target="_blank" class="btn-small btn-view">
+                                <i class="fas fa-eye"></i> Voir
+                            </a>
+                            <a href="./docs/Bachelor_de_technologie_mécanique_production_2025_02_24.pdf" download="Plaquette_formation.pdf" class="btn-small btn-outline">
+                                <i class="fas fa-download"></i> Télécharger
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="annexe-card">
-                    <i class="fas fa-images"></i>
-                    <h3>Galerie</h3>
-                    <p>Photos et illustrations de mes projets et réalisations.</p>
-                    <a href="#" class="btn-small">Voir la galerie</a>
+                <!-- Stages -->
+                <div class="annexe-category">
+                    <h3><i class="fas fa-briefcase"></i> Expériences professionnelles</h3>
+                    <div class="annexe-card">
+                        <h4>Fiche d'appréciation de stage</h4>
+                        <p>Évaluation de mon stage de 1ère année effectué à la BA 204.</p>
+                        <div class="annexe-actions">
+                            <a href="./docs/Fiche appreciation de stage.pdf" target="_blank" class="btn-small btn-view">
+                                <i class="fas fa-eye"></i> Voir
+                            </a>
+                            <a href="./docs/Fiche appreciation de stage.pdf" download="Fiche_appreciation_stage.pdf" class="btn-small btn-outline">
+                                <i class="fas fa-download"></i> Télécharger
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="annexe-card">
-                    <i class="fas fa-video"></i>
-                    <h3>Vidéos</h3>
-                    <p>Présentations vidéo et démonstrations de projets.</p>
-                    <a href="#" class="btn-small">Voir les vidéos</a>
-                </div>
-                
-                <div class="annexe-card">
-                    <i class="fas fa-book"></i>
-                    <h3>Bibliographie</h3>
-                    <p>Ressources et références qui m'ont inspiré.</p>
-                    <a href="#" class="btn-small">Consulter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projet Professionnel -->
+    <section id="projet-pro" class="section">
+        <div class="container">
+            <h2>Mon Projet Professionnel</h2>
+            <div class="projet-pro-content">
+                <div class="projet-pro-text">
+                    <h3>Objectifs Professionnels</h3>
+                    <p>Passionné par l'aéronautique et fort de mes expériences en maintenance et en conception, je souhaite m'orienter vers le domaine de la maintenance aéronautique. Mon objectif est de devenir technicien supérieur en maintenance aéronautique, en alliant mes compétences techniques acquises lors de ma formation à l'ENSAM et ma passion pour l'aéronautique.</p>
+                    
+                    <h3>Parcours Envisagé</h3>
+                    <ul class="projet-pro-list">
+                        <li><strong>Court terme (1-2 ans) :</strong> Obtenir ma licence de pilote privé (PPL) et réaliser ma 3ème année de bachelor en alternance dans une structure spécialisée dans la maintenance aéronautique afin d’avoir une expérience sur le terrain et de valider mon bachelor de technologie aux Arts et Métiers.</li>
+                        <li><strong>Moyen terme (3-5 ans) :</strong> Après l’obtention du diplôme de Bachelor, je souhaite m’orienter vers des études d’ingénieur en alternance en intégrant une entreprise dans la maintenance aéronautique.</li>
+                        <li><strong>Long terme (5-10 ans) :</strong> Évoluer vers un poste à responsabilités dans la gestion de maintenance d'une flotte aérienne, ou me spécialiser dans un domaine spécifique comme l'avionique ou la structure.</li>
+                    </ul>
+                    
+                    <h3>Compétences Clés</h3>
+                    <div class="competences-grid">
+                        <div class="competence-card">
+                            <i class="fas fa-cogs"></i>
+                            <h4>Maintenance</h4>
+                            <p>Expérience en maintenance aéronautique acquise lors de mon stage à la BA204</p>
+                        </div>
+                        <div class="competence-card">
+                            <i class="fas fa-plane"></i>
+                            <h4>Aéronautique</h4>
+                            <p>Formation théorique et pratique en aéronautique (BIA, PPL en cours)</p>
+                        </div>
+                        <div class="competence-card">
+                            <i class="fas fa-laptop"></i>
+                            <h4>CAO</h4>
+                            <p>Maîtrise des logiciels de CAO (CATIA V5) pour la conception de pièces</p>
+                        </div>
+                        <div class="competence-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Travail d'équipe</h4>
+                            <p>Expérience en gestion de projet et travail en équipe pluridisciplinaire</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Pourquoi ce choix ?</h3>
+                    <p>Mon intérêt pour l'aéronautique, combiné à mes compétences techniques et à ma passion pour la résolution de problèmes techniques, fait de la maintenance aéronautique un choix évident pour moi. Je suis attiré par la rigueur et la précision requises dans ce domaine, ainsi que par les opportunités d'évolution qu'il offre.</p>
                 </div>
             </div>
         </div>
@@ -283,7 +383,7 @@
     <!-- Scripts -->
     <script src="js/script.js"></script>
     <script src="js/mission-tabs.js"></script>
-    
-
+    <script src="js/main.js"></script>
+    <script src="js/download.js"></script>
 </body>
 </html>
